@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>扫码付款</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #ededed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  background: #07c160;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.header h1 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 480px;
+}
+.qr-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  width: 100%;
+  text-align: center;
+}
+.qr-card img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+}
+.tip {
+  margin-top: 20px;
+  color: #888;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-align: center;
+}
+.tip strong {
+  color: #07c160;
+}
+.back-link {
+  margin-top: 32px;
+  color: #999;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.back-link:hover { color: #07c160; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>微信扫码付款</h1>
+</div>
+<div class="main">
+  <div class="qr-card">
+    <img src="https://aka.doubaocdn.com/s/mrH1ywgNl1" alt="微信收款码">
+  </div>
+  <p class="tip">
+    请使用 <strong>微信扫一扫</strong> 扫描上方二维码<br>
+    或长按图片保存后，在微信中识别
+  </p>
+  <a href="index.html" class="back-link">← 返回博客首页</a>
+</div>
+</body>
+</html>
