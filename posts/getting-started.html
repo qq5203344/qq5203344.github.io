@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device, initial-scale=1.0">
+<title>如何在 GitHub Pages 上写一篇新文章 - 我的博客</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="nav">
+<div class="nav-inner">
+<a href="../index.html" class="nav-brand">我的博客</a>
+<div class="nav-links">
+<a href="../index.html">首页</a>
+<a href="../about.html">关于</a>
+</div>
+</div>
+</nav>
+<main class="container">
+<article class="post-page">
+<h1>如何在 GitHub Pages 上写一篇新文章</h1>
+<p class="post-date">2026 年 9 月 15 日 · 约 3 分钟阅读</p>
+<p>这个博客是纯静态的，没有使用 Jekyll、Hugo 之类的静态站点生成器。好处是简单直接——每篇文章就是一个 HTML 文件。</p>
+<h2>文件结构</h2>
+<pre><code>.
+├── index.html          # 首页
+├── about.html          # 关于页
+├── css/
+│   └── style.css       # 样式
+└── posts/
+    ├── hello-world.html
+    └── getting-started.html</code></pre>
+<h2>添加一篇新文章的步骤</h2>
+<ol>
+<li>在 <code>posts/</code> 目录下新建一个 HTML 文件，比如 <code>my-new-post.html</code>。</li>
+<li>复制现有文章（比如 <code>hello-world.html</code>）的结构，修改标题、日期和正文内容。</li>
+<li>打开 <code>index.html</code>，在「最新文章」列表里复制一个文章卡片块，填上你的新文章信息。</li>
+<li>提交并推送到 GitHub，GitHub Pages 会在几十秒内自动更新。</li>
+</ol>
+<h2>一些小提示</h2>
+<ul>
+<li>文章内链接到样式表用 <code>../css/style.css</code>（因为文章在 <code>posts/</code> 子目录里）。</li>
+<li>首页里链接到文章用 <code>posts/xxx.html</code>。</li>
+<li>想要代码高亮、标签分类、RSS 之类的功能，后续可以再加上。</li>
+</ul>
+<blockquote><p>保持简单，是这个博客最重要的设计原则。</p></blockquote>
+<hr>
+<p><a href="../index.html">← 返回首页</a></p>
+</article>
+</main>
+<footer class="footer">
+<div class="container">
+<p>© 2026 qq5203344 · Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+</div>
+</footer>
+</body>
+</html>
