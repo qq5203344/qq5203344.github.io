@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>我的博客</title>
-<meta name="description" content="记录思考、分享技术与生活">
+<title>靓号站 - 优质数字资产交易平台</title>
+<meta name="description" content="靓号站 - 专注各类优质靓号业务，高价值号码交易">
 <link rel="stylesheet" href="css/style.css">
 <style>
 .sponsor-box{
@@ -27,17 +27,65 @@
   font-weight:500;
   text-decoration:none;
   transition:background .2s ease,transform .2s ease;
+  margin:0 6px;
 }
 .sponsor-btn:hover{
   background:var(--accent-hover);
   transform:translateY(-1px);
+}
+.sponsor-btn.outline{
+  background:transparent;
+  color:var(--accent) !important;
+  border:1.5px solid var(--accent);
+}
+.sponsor-btn.outline:hover{
+  background:var(--accent);
+  color:#fff !important;
+}
+.number-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+.number-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.number-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 4px 16px rgba(0,0,0,0.06);
+}
+.number-card .num{
+  font-size:1.35rem;
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:1px;
+  margin-bottom:6px;
+  font-family:"SF Mono",Menlo,Consolas,monospace;
+}
+.number-card .type{
+  font-size:.8rem;
+  color:var(--text-secondary);
+  margin-bottom:12px;
+}
+.number-card .ask{
+  display:inline-block;
+  font-size:.82rem;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:500;
 }
 </style>
 </head>
 <body>
 <nav class="nav">
 <div class="nav-inner">
-<a href="index.html" class="nav-brand">我的博客</a>
+<a href="index.html" class="nav-brand">靓号站</a>
 <div class="nav-links">
 <a href="index.html" class="active">首页</a>
 <a href="about.html">关于</a>
@@ -46,41 +94,47 @@
 </nav>
 <header class="hero">
 <div class="container">
-<h1>你好，我是 qq5203344。</h1>
-<p class="hero-sub">这里记录我的思考、技术笔记与生活碎片。<br>慢慢写，慢慢沉淀。</p>
+<h1>靓号站</h1>
+<p class="hero-sub">国内稀缺优质数字资产，专注各类靓号业务领域。<br>高价值号码交易市场，品牌辨识度高，业务定位精准。</p>
 </div>
 </header>
 <main class="container">
 <div class="sponsor-box">
-<h3>觉得内容对你有帮助？</h3>
-<p>如果这些文字给你带来了一点启发或乐趣，欢迎请我喝杯咖啡 ☕</p>
-<a href="pay.html" class="sponsor-btn">打赏赞助</a>
+<h3>咨询靓号业务</h3>
+<p>如有中意号码，欢迎来电咨询或扫码联系</p>
+<a href="tel:13184848444" class="sponsor-btn">📞 13184848444</a>
+<a href="pay.html" class="sponsor-btn outline">扫码联系</a>
 </div>
 <section class="post-list">
-<h2 class="section-title">最新文章</h2>
-<article class="post-card">
-<div class="post-meta">
-<span class="post-date">2026 年 9 月 15 日</span>
-<span class="post-tag">随笔</span>
+<h2 class="section-title">精选靓号</h2>
+<div class="number-grid">
+<div class="number-card">
+<div class="num">138****8888</div>
+<div class="type">手机靓号</div>
+<a href="tel:13184848444" class="ask">咨询购买 →</a>
 </div>
-<h3 class="post-title"><a href="posts/hello-world.html">你好，世界：博客开张了</a></h3>
-<p class="post-excerpt">这是博客的第一篇文章。从一个简单的静态页面开始，用最朴素的方式记录自己的想法。为什么要写博客？因为输出是最好的思考方式……</p>
-<a href="posts/hello-world.html" class="read-more">阅读全文 →</a>
-</article>
-<article class="post-card">
-<div class="post-meta">
-<span class="post-date">2026 年 9 月 15 日</span>
-<span class="post-tag">教程</span>
+<div class="number-card">
+<div class="num">66688899</div>
+<div class="type">QQ 靓号</div>
+<a href="tel:13184848444" class="ask">咨询购买 →</a>
 </div>
-<h3 class="post-title"><a href="posts/getting-started.html">如何在 GitHub Pages 上写一篇新文章</a></h3>
-<p class="post-excerpt">这篇文章会带你了解博客的文件结构，以及如何添加一篇新的文章。不需要任何框架，只需要一个 HTML 文件……</p>
-<a href="posts/getting-started.html" class="read-more">阅读全文 →</a>
-</article>
+<div class="number-card">
+<div class="num">A88888</div>
+<div class="type">车牌靓号</div>
+<a href="tel:13184848444" class="ask">咨询购买 →</a>
+</div>
+<div class="number-card">
+<div class="num">8888 6666</div>
+<div class="type">座机靓号</div>
+<a href="tel:13184848444" class="ask">咨询购买 →</a>
+</div>
+</div>
+<p style="text-align:center;margin-top:32px;color:var(--text-secondary);font-size:.88rem;">* 以上为展示示例，实际号码请电话咨询</p>
 </section>
 </main>
 <footer class="footer">
 <div class="container">
-<p>© 2026 qq5203344 · Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+<p>© 2026 靓号站 · 联系电话 13184848444 · Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
 </div>
 </footer>
 </body>
